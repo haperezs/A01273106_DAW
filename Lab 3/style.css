@@ -1,0 +1,47 @@
+body
+{
+    background-color: #DCDBE0;
+    font-family: Verdana,sans-serif;
+}
+
+header
+{
+    text-align: center;
+}
+
+section
+{
+    background-color: white;
+}
+
+footer
+{
+    background-color: #C2C1CC;
+    text-align: center;
+    font-size: 10px;
+}
+
+#nombre
+{
+    color: darkmagenta;
+}
+
+table.tecno
+{
+    border-style: solid;
+    border: 5px color:black;
+	text-align: center;
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+table.nav
+{
+    border-style: solid;
+    border: 5px color:black;
+	text-align: center;
+    background-color: whitesmoke;
+    font-size: 20px;
+    
+    padding: 10px;
+}
