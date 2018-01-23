@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>DAW Lab 4</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>DAW Lab 4</h1>
+        </header>
+
+        <nav>
+            <a href="#botones">Funciones</a>
+            <a href="#preguntas">Preguntas</a>
+        </nav>
+
+        
+        <article>
+            <h2 id="botones">Funciones</h2>
+            <button class = "btn" onclick = "ejercicio1()">Ejercicio 1</button>
+            <button class = "btn" onclick = "ejercicio2()">Ejercicio 2</button>
+            <button class = "btn" onclick = "contador([1, -1, 2, 0, -3, 0, 3, 2])">Ejercicio 3</button>
+            <button class = "btn" onclick = "promedios([[1, 2, 3, 4, 5], [5, 5, 5, 5, 5], [5, 5, 5, 5, 6], [123,456, 789], [48, 32, 55, 20]])">Ejercicio 4</button>
+            <button class = "btn" onclick = "inverso()">Ejercicio 5</button>
+            <button class = "btn" onclick = "ejercicio6()">Ejercicio 6</button></div>
+        
+            <table class = "tecno">
+                <tr>
+                    <th>
+                        <p id = "respuesta">Reservado</p>
+                    </th>
+                </tr>
+            </table>
+        </article><hr>
+
+        <article>
+            <h2 id="preguntas">Preguntas</h2>
+            <ul>
+                <li>¿Qué diferencias y semejanzas hay entre Java y JavaScript?<br>Como semejanzas se encuentran la sintaxis básica y el hecho de que existen los objetos. Como diferencias tenemos que javascript es más dinámico con las variables y es un lenguaje interpretado</li><br>
+                <li>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)<br>
+                    <ul>
+                        <li>getDate()</li>
+                        <li>getDay()</li>
+                        <li>getFullYear()</li>
+                        <li>getMilliseconds()</li>
+                        <li>getMinutes()</li>
+                        <li>getSeconds()</li>
+                        <li>getTime()</li>
+                    </ul>
+                </li><br>
+                <li>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)<br>
+                    <ul>
+                        <li>find()</li>
+                        <li>findIndex()</li>
+                        <li>join()</li>
+                        <li>lastIndexOf()</li>
+                        <li>pop()</li>
+                        <li>push()</li>
+                    </ul>
+                </li><br>
+                <li>¿Cómo se declara una variable con alcance local dentro de una función?<br>Dentro de la función, var nombre</li><br>
+                <li>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?<br>Todos los scripts y funciones pueden acceder a ella</li><br>
+                <li>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares? ¿Para qué podrías utilizar esto en una aplicación web?<br>search(), puede ser útil para crear estadísticas de uso</li><br>
+            </ul>
+            <p>*Diferentes a los vistos en clase :P</p>
+        </article><hr>
+
+        <footer>
+            <p>Hugo Arturo Pérez Soní
+            <br>A01273106</p>
+            <p>Editor utilizado: <a href=http://brackets.io/>Brackets</a></p>
+        </footer>
+
+        <script type = "text/javascript" src = "script.js"></script>
+    </body>
+
+</html>
