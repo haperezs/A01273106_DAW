@@ -1,0 +1,89 @@
+body
+{
+    background-color: #DCDBE0;
+    font-family: Verdana,sans-serif;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 6px;
+}
+
+header
+{
+    text-align: center;
+}
+
+
+footer
+{
+    background-color: #C2C1CC;
+    text-align: center;
+    font-size: 10px;
+    padding: 1px;
+}
+
+table.tecno
+{
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: #FFF;
+    color: #024457;
+    border: 5px solid #167F92;
+    padding: 3px;
+}
+
+table.tecno tr 
+{
+    border: 1px solid #D9E4E6;
+}
+
+table.tecno tr:nth-child(odd) 
+{   
+    background-color: #EAF3F3;
+}
+
+.topnav 
+{
+    overflow: hidden;
+    border: solid;
+    border: 5px color: black;
+	text-align: center;
+    background-color: white;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.topnav a 
+{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;   
+}
+
+.topnav a:hover 
+{
+    background-color: lightgray;
+    color: black;
+}
+
+.topnav a.active 
+{
+    background-color: dimgray;
+    color: white;
+}
+
+.producto{
+    background-color:whitesmoke;
+    padding: 60px;
+    max-width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.imagen{
+    width: 200px;
+}
