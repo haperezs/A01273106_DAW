@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>DAW Lab 5</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="password.html">Password</a>
+            <a class="active" href="productos.html">Productos</a>
+            <a href="libre.html">Libre</a>
+        </div>
+
+        <header>
+            <h1>DAW Lab 5</h1>
+        </header>
+        
+        <article>
+            <h2 id="botones">Productos</h2>
+            <table>
+                <tr>
+                    <td><div class="producto">
+                        <img class="imagen" src="elote.jpg">
+                        <h3>Elote</h3>
+                        <p>Precio: <precio id="precioelote">12</precio></p><br>
+                        <button onclick = "quitar('elote', 'precioelote')">-</button>
+                        <cantidad id="elote" >0</cantidad>
+                        <button onclick = "agregar('elote', 'precioelote')">+</button><br>
+                    </div></td>
+                    <td><div class="producto">
+                        <img class="imagen" src="trolelote.jpg">
+                        <h3>Trolelote</h3>
+                        <p>Precio: <precio id="preciotrolelote">15</precio></p><br>
+                        <button onclick = "quitar('trolelote', 'preciotrolelote')">-</button>
+                        <cantidad id="trolelote" >0</cantidad>
+                        <button onclick = "agregar('trolelote', 'preciotrolelote')">+</button><br>
+                    </div></td>
+                    <td><div class="producto">
+                        <img class="imagen" src="conchitas.jpg">
+                        <h3>Conchitas</h3>
+                        <p>Precio: <precio id="precioconchitas">20</precio></p><br>
+                        <button onclick = "quitar('conchitas', 'precioconchitas')">-</button>
+                        <cantidad id="conchitas" >0</cantidad>
+                        <button onclick = "agregar('conchitas', 'precioconchitas')">+</button><br> 
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class = "compra" onclick = "comprar()">Comprar</button><br>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class = "tecno">
+                <tr>
+                    <th>
+                        <p>Precio: <precio id="precio">0</precio></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>IVA: <iva id="iva">0</iva></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Total: <total id="total">0</total></p>
+                    </th>
+                </tr>
+            </table>
+
+        </article><hr>
+
+        <footer>
+            <p>Hugo Arturo Pérez Soní
+            <br>A01273106</p>
+            <p>Editor utilizado: <a href=http://brackets.io/>Brackets</a></p>
+        </footer>
+
+        <script type = "text/javascript" src = "script.js"></script>
+    </body>
+
+</html>
