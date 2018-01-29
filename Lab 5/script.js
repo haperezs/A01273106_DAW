@@ -1,11 +1,11 @@
 function checkpwd(){
-    let pwd1 = document.getElementById('password').value;
-    let pwd2 = document.getElementById('passwordV').value;
+    let pwd1 = document.getElementById("password").value;
+    let pwd2 = document.getElementById("passwordV").value;
     
     if(pwd1 == pwd2){
-        alert('Validación exitosa');
+        alert("Validación exitosa");
     }else{
-        alert('Las contraseñas no coinciden');
+        alert("Las contraseñas no coinciden");
     }
 }
 
@@ -46,5 +46,24 @@ function comprar(){
     let total = parseFloat(tot.textContent);
     
     alert("La cuenta es de: " + total + " pesos");
+}
+
+function registrar(){
+    let user = document.getElementById("user").value;
+    let mail = document.getElementById("mail").value;
+    let pwd1 = document.getElementById("password").value;
+    let pwd2 = document.getElementById("passwordV").value;
+    
+         
+    if(!user || !mail || !pwd1 || !pwd2){
+         alert("Favor de llenar todos los campos");
+    }else{
+        if(pwd1 == pwd2){
+            alert("Registro exitoso");
+
+        }else{
+            alert("Las contraseñas no coinciden");
+        }
+    }
 }
 

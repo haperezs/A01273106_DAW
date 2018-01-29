@@ -11,7 +11,8 @@
         <div class="topnav">
             <a href="password.html">Password</a>
             <a href="productos.html">Productos</a>
-            <a class="active" href="libre.html">Libre</a>
+            <a class="active" href="libre.html">Registrate</a>
+            <a href="preguntas.html">Preguntas</a>
         </div>
 
         <header>
@@ -19,10 +20,26 @@
         </header>
         
         <article>
-            <h2 id="botones">Libre</h2>
+            <h2 id="botones">Registrate</h2>
             
+            <div id="avatar"></div>
+ 
+            <form>
+                Username:<br>
+                <input type="text" placeholder="wooka" id="user"/>
+                <br>
+                Correo:<br>
+                <input type="text" placeholder="nombre@dominio.com" id="mail"/>
+                <br>
+                Contraseña:<br>
+                <input type="password" id="password"/><br>
+                Repetir contraseña:<br>
+                <input type ="password" id="passwordV"/><br>
+                <br>
+                <button onclick="registrar()">Enviar</button>
+                <br>
+            </form>
         </article><hr>
-
         <footer>
             <p>Hugo Arturo Pérez Soní
             <br>A01273106</p>
