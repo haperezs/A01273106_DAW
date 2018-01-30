@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>DAW Lab 6</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a class="active" href="preguntas.html">Preguntas</a>
+        </div>
+        
+        <div>
+            <img id="dude" src="dude.png"></img>
+        </div>
+
+        <header>
+            <h1>DAW Lab 6</h1>
+        </header>
+    
+        <div>
+            <br><button onclick = "activate()">Botón mágico</button>
+            <p id="printer"></p>
+        </div>
+    
+        <h3>Pon al compa en el cuadro.</h3>
+        <div id="cuadro" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <img id="drag1" src="dude.png" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        
+        <article id = "changetext">
+            <h2>Preguntas</h2>
+            <ul>
+                <li>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?<br>
+                    <ul>
+                        <li>Static - Default, los elementos se posicionan en el orden que aparecen</li>	
+                        <li>Absolute - La posición depende de los otros elemetos colocados</li>
+                        <li>Fixed - Posición relativa a la ventana del navegador </li>
+                        <li>Relative - Posición relativa respecto a su posición original</li>
+                        <li>Sticky - La posición depende del scroll</li>
+                    </ul>
+                </li><br>
+                <li>¿Cuáles son los valores estándar para la propiedad visibility?<br>
+                    <ul>
+                        <li>Visible</li>	
+                        <li>Hidden</li>
+                        <li>Collapse</li>
+                    </ul>
+                </li><br>
+                <li>¿Qué es el zIndex y para qué sirve?<br>Una propiedad que determina cuales elementos se superponen a cuales</li><br>
+            </ul>
+        </article><hr>
+
+        <article>
+            <h2>Fuentes consultadas</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">https://www.w3schools.com/jsref/met_win_setinterval.asp</a></li>
+                <li><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp">https://www.w3schools.com/jsref/met_win_settimeout.asp</a></li>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index">https://developer.mozilla.org/es/docs/Web/CSS/z-index</a></li>
+            </ul>
+        </article><hr>
+        
+        <footer>
+            <p>Hugo Arturo Pérez Soní
+            <br>A01273106</p>
+            <p>Editor utilizado: <a href=http://brackets.io/>Brackets</a></p>
+        </footer>
+
+        <script type = "text/javascript" src = "script.js"></script>
+    </body>
+
+</html>
