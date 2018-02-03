@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>DAW Lab 7</title>
+        
+        <link href="palette.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+    </head>
+
+    <body>    
+        <nav>
+            <div class="dark-primary-color nav-wrapper">
+                <a href="#" class="brand-logo right">DAW</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="index.html">Preguntas</a></li>
+                    <li><a href="index.html">Tamales</a></li>
+                    <li><a href="index.html">Más preguntas</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <header>
+            <div class="row">
+                <div class="col s12"><span class="flow-text"><h1 class="primary-text-color">DAW Lab 7</h1></span></div>
+                <div class="col s5 offset-s5"><span class="flow-text">
+                    <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Pícalo, no hace nada">Botón mágico</a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large accent-color">
+                <i class="large material-icons">?</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">:D</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">:(</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">:v</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">:3</i></a></li>
+            </ul>
+        </div>
+    
+        <div class="col s12 m7">
+            <h2 class="header">Avatar</h2>
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="dude.png" width="200" height="200">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>You've probably seen them on Twitter before. Maybe you didn't know what they were called, or maybe you'd like to get in on some of that 8-bit avatar fun but you're not sure how to make one. There are a few ways, actually.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.abeautifulsite.net/how-to-generate-8-bit-avatars">How to generate 8-bit avatars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <article>
+            <h2>Material design</h2>
+            <p>
+                Es una normativa de diseño que incorpora principios de buen diseño, para hacer una experiencia de usuario unificada, independientemente del dispositivo
+                <br>Principios:
+                <br>Material is the metaphor
+                <br>Bold, graphic, intentional
+                <br>Motion provides meaning
+            </p>
+        </article><hr>
+            
+        <article>
+            <h2>Preguntas</h2>
+            <ul>
+                <li>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?<br>
+                    <ul>
+                        <li>Static - Default, los elementos se posicionan en el orden que aparecen</li>	
+                        <li>Absolute - La posición depende de los otros elemetos colocados</li>
+                        <li>Fixed - Posición relativa a la ventana del navegador </li>
+                        <li>Relative - Posición relativa respecto a su posición original</li>
+                        <li>Sticky - La posición depende del scroll</li>
+                    </ul>
+                </li><br>
+                <li>¿Cuáles son los valores estándar para la propiedad visibility?<br>
+                    <ul>
+                        <li>Visible</li>	
+                        <li>Hidden</li>
+                        <li>Collapse</li>
+                    </ul>
+                </li><br>
+                <li>¿Qué es el zIndex y para qué sirve?<br>Una propiedad que determina cuales elementos se superponen a cuales</li><br>
+            </ul>
+        </article><hr>
+        
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">Compártenos tu opinión</label>
+                        <a class="waves-effect waves-light btn" onclick="Materialize.toast('Se ha recibido tu respuesta', 2000)">Enviar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <article>
+            <h2>Fuentes consultadas</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">https://www.w3schools.com/jsref/met_win_setinterval.asp</a></li>
+                <li><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp">https://www.w3schools.com/jsref/met_win_settimeout.asp</a></li>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index">https://developer.mozilla.org/es/docs/Web/CSS/z-index</a></li>
+            </ul>
+        </article><hr>
+        
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Hugo Arturo Pérez Soní</h5>
+                        <p class="grey-text text-lighten-4">A01273106</p>
+                        <p>Editor utilizado: <a href=http://brackets.io/>Brackets</a></p>
+                    </div>        
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 DAW
+                </div>
+            </div>
+        </footer>
+            
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+
+</html>
+
