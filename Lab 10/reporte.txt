@@ -1,0 +1,17 @@
+• ¿Que muestra la instrucción? 
+La información de la tabla creada, las columnas y tipos de datos de estas
+   
+• ¿Qué efecto tuvo esta acción?
+Todas las tablas fueron creadas de manera simultánea 
+
+• ¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+Que se pueden crear todas las tablas que se requieran juntas, una vez que estén todas listas
+
+• ¿Qué relación tienen con las tablas de la base de datos?
+Cada archivo contiene los datos correspondientes a una de las tablas que definimos en la base de datos
+
+• ¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+Indica como están separados los datos. Las columnas con una coma y las filas con un salto de línea
+
+• ¿Qué sucedió?
+La consulta mostró los datos que se insertaron en la tabla
