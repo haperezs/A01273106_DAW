@@ -1,0 +1,146 @@
+  <div class="main-panel">
+      <nav class="navbar navbar-transparent navbar-absolute">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Bodegas</a>
+              </div>
+              <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a href="#Francisco" class="dropdown-toggle" data-toggle="dropdown">
+                              <p>Hugo Arturo<i class="material-icons">keyboard_arrow_down</i></p>
+                              <p class="hidden-lg hidden-md">Perfil</p>
+                          </a>
+
+                          <ul class="dropdown-menu">
+                              <li>
+                                  <a href="#">Editar Perfil</a>
+                              </li>
+                              <li>
+                                  <a href="#">Cerrar Sesión</a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <div class="content">
+          <div class="container-fluid">
+
+              <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                      <div class="card">
+                          <div class="card-header" >
+                              <h4 class="title">Nueva Bodega</h4>
+                          </div>
+                          <div class="card-content">
+                              <form action="validar.php" method="POST">
+                                  <div class="row">
+                                      <div class="col-md-6 col-sm-6">
+                                          <div class="form-group label-floating">
+                                              <label class="control-label">Nombre</label>
+                                              <input type="text" class="form-control" name="nombre" id="nombre">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6 col-sm-6">
+                                          <div class="form-group label-floating">
+                                              <label class="control-label">Encargado</label>
+                                              <input type="text" class="form-control" name="encargado" id="encargado">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6 col-sm-6">
+                                          <div class="form-group label-floating">
+                                                <label class="control-label">Direccion</label>
+                                                <input type="text" class="form-control" name="direccion" id="direccion">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6 col-sm-6">
+                                          <div class="form-group label-floating">
+                                              <label class="control-label">Teléfono</label>
+                                              <input type="tel" maxlength="10" class="form-control" name="telefono" id="telefono">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-3 col-sm-3">
+                                          <div class="form-group label-static">
+                                              <label class="control-label">Ciudad</label>
+                                              <select class="form-control" name="ciudad" id="ciudad">
+                                                  <option value="" disabled selected>Selecciona una opción</option>
+                                                  <option value="celaya">Celaya</option>
+                                                  <option value="leon">León</option>
+                                                  <option value="queretaro">Querétaro</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3 col-sm-3">
+                                          <div class="form-group label-static">
+                                              <label class="control-label">Estado</label>
+                                              <select class="form-control" name="estado" id="estado">
+                                                  <option value="" disabled selected>Selecciona una opción</option>
+                                                  <option value="guanajuato">Guanajuato</option>
+                                                  <option value="queretaro">Querétaro</option>
+                                                  <option value="chiapas">Chiapas</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3 col-sm-3">
+                                          <div class="form-group label-static">
+                                              <label class="control-label">País</label>
+                                              <select class="form-control" name="pais" id="pais">
+                                                  <option value="" disabled selected>Selecciona una opción</option>
+                                                  <option value="mexico">México</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3 col-sm-3">
+                                          <div class="form-group label-floating">
+                                              <label class="control-label">Codigo Postal</label>
+                                              <input type="text" maxlength="5" class="form-control" name="zip" id="zip">
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <button type="submit" class="btn btn-primary pull-right btn-round">Guardar</button>
+                                  <button type="reset" class="btn btn-danger pull-right btn-round">Cancelar</button>
+
+                                  <div class="clearfix"></div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <h2 class="title text-center">Preguntas</h2>
+                    <ul>
+                       <li>¿Por qué es una buena práctica separar el controlador de la vista?.<br>
+                          Porque se hace más segura la página, ya que oculta el php y el script</li><br>
+                       <li>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?<br>
+                           <ul>
+                               <li></li>
+                               <li></li>
+                               <li></li>
+                           </ul>
+                       </li><br>
+                       <li>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.<br>
+                           <ul>
+                               <li>jdtojewish - Convierte una fecha a una fecha en el calendario judío</li>
+                               <li>password_hash - Encripta contraseñas con un hash</li>
+                           </ul>
+                       </li><br>
+                       <li>¿Qué es XSS y cómo se puede prevenir?<br>
+                          Cross-Site Scripting. Es un ataque basado en la inyección de código, un usuario envía scripts a una aplicación web. Se puede prevenir realizando validaciones de los datos que los usuarios ingresan</li><br>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
