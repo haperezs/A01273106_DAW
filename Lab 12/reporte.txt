@@ -1,0 +1,56 @@
+• Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+Existen 2 materiales con la misma clave. Ya había un registro con clave 1000 de Varilla 3/16 y ahora hay otro que ingresamos. Es posible por que no hay llave primaria
+
+• ¿Qué ocurrió?
+Marca un error porque no se puede utilizar la misma llave
+
+• ¿Qué información muestra esta consulta?
+Muestra las restricciones de la tabla, en este caso la llave primaria
+
+• ¿Qué sentencias utilizaste para definir las llaves primarias? 
+ALTER TABLE Proveedores add constraint llaveProveedores PRIMARY KEY (RFC)
+ALTER TABLE Proyectos add constraint llaveProyectos PRIMARY KEY (Numero)
+
+• ¿Qué sentencias utilizaste para definir este constrait?
+ALTER TABLE Entregan add constraint llaveEntregan PRIMARY KEY (Clave, RFC, Numero, Fecha)
+
+• ¿Qué particularidad observas en los valores para clave, rfc y numero? 
+Son 0
+
+• ¿Cómo responde el sistema a la inserción de este registro?
+No hay ningun problema, lo agrega normal
+
+• ¿Qué significa el mensaje que emite el sistema? 
+No se pueden insertar los datos por un conflicto con la llave foránea
+
+• ¿Qué significado tiene la sentencia anterior?
+Que al no existir el elemento en la tabla primaria no se puede crear en esta
+
+• ¿Qué significan las columnas de esas consultas?
+Las llaves que hemos creado en cada tabla
+
+• Qué uso se le está dando a GETDATE()?
+El registro se guarda con la fecha y hora actual
+
+• ¿Tiene sentido el valor del campo de cantidad?
+No, no tendría sentido entregar 0 productos
+
+• ¿Cómo responde el sistema?
+The INSERT statement conflicted with the CHECK constraint "Cantidad"
+
+• ¿Qué significa el mensaje?
+No se puede agregar una cantidad menor o igual a 0 por el constraint que acabamso de agregar
+
+
+Integridad referencial
+La integridad referencial se refiere a que los valores sean coherentes en las distintas tablas. 
+Se debe evitar que haya referencias a valores inexistentes y si cambia el valor de una clave, 
+todas las referencias a ella se cambien en consecuencia en toda la base de datos.
+
+Para mantener la integridad referencial se impide:
+-Agregar o cambiar filas en una tabla relacionada si no hay ninguna fila asociada en la tabla principal.
+-Cambiar valores en una tabla principal que crea filas huérfanas en una tabla relacionada.
+-Eliminar filas de una tabla principal cuando hay filas relacionadas coincidentes.
+
+Microsoft. "Integridad de los datos". Internet: https://technet.microsoft.com/es-es/library/ms184276(v=sql.105).aspx#Integridad de dominio [26 de febrero de 2018] 
+
