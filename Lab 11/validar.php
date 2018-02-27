@@ -1,4 +1,8 @@
 <?php
+  function _e($string) {
+    return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+  }
+
   $currentPage = "0";
   $msg = "0";
 
@@ -40,12 +44,21 @@
     if(strlen($_POST["telefono"]) != 10){
         $msg = "Número de teléfono no válido. Digitos faltantes";
     }
-    
+
   }else{
     $msg = "Error. Campos incompletos";
   }
 
   if($msg == "0"){
+    $nom = _e($_POST["nombre"]);
+    $enc = _e($_POST["encargado"]);
+    $dir = _e($_POST["direccion"]);
+    $tel = _e($_POST["telefono"]);
+    $ciu = _e($_POST["ciudad"]);
+    $est = _e($_POST["estado"]);
+    $pai = _e($_POST["pais"]);
+    $zip = _e($_POST["zip"]);
+
     header("Location: exito.php");
   }
 

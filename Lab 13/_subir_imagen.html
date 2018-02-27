@@ -1,0 +1,42 @@
+
+<div class="main-panel">
+
+    <div class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-9 col-md-9">
+                    <div class="card">
+                        <div class="card-header" >
+                            <h4 class="title">Subir imagen</h4>
+                        </div>
+
+                        <div class="card-content">
+                            <form action="crear.php" method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">Nombre</label>
+                                            <input type="text" class="form-control validate" name="nombre" id="nombre" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="btn">
+                                              <input type="file" class="btn" name="imagen" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-round">Subir</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

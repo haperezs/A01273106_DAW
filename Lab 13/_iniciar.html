@@ -1,0 +1,80 @@
+  <div class="main-panel">
+
+      <div class="content">
+          <div class="container-fluid">
+
+
+              <div class="row">
+                  <div class="col-lg-9 col-md-9">
+                      <?php if (isset($_SESSION["error"]) != ""): ?>
+                          <div class="alert alert-danger" data-notify="container">
+                              <p data-notify="message"><?=$_SESSION["error"] ?></p>
+                          </div>
+                      <?php endif; ?>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-9 col-md-9">
+                      <div class="card">
+                          <div class="card-header" >
+                              <h4 class="title">Iniciar sesión</h4>
+                          </div>
+
+                          <div class="card-content">
+                              <form action="inView.php" method="POST">
+                                  <div class="row">
+                                      <div class="col-md-12 col-sm-12">
+                                          <div class="form-group label-floating">
+                                              <label class="control-label">Usuario</label>
+                                              <input type="text" class="form-control" name="usuario" id="usuario" required>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12 col-sm-12">
+                                          <div class="form-group label-floating">
+                                                <label class="control-label">Contraseña</label>
+                                                <input type="password" class="form-control" name="pwd" id="pwd" required>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <button type="submit" class="btn btn-primary btn-round">Entrar</button>
+
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9">
+                <div class="card">
+                    <h2 class="title text-center">Preguntas</h2>
+                    <ul>
+                       <li>¿Por qué es una buena práctica separar el controlador de la vista?.<br>
+                          Porque se hace más segura la página, ya que oculta el php y el script</li><br>
+                       <li>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?<br>
+                           <ul>
+                               <li>$_COOKIE - Cookies HTTP</li>
+                               <li>$_SESSION - Información del entorno del servidor y de ejecución</li>
+                               <li>$_FILES - Variables de subida de ficheros HTTP</li>
+                               <li>$_REQUEST — Variables HTTP Request</li>
+                           </ul>
+                       </li><br>
+                       <li>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.<br>
+                           <ul>
+                               <li>jdtojewish - Convierte una fecha a una fecha en el calendario judío</li>
+                               <li>password_hash - Encripta contraseñas con un hash</li>
+                           </ul>
+                       </li><br>
+                       <li>¿Qué es XSS y cómo se puede prevenir?<br>
+                          Cross-Site Scripting. Es un ataque basado en la inyección de código, un usuario envía scripts a una aplicación web. Se puede prevenir realizando validaciones de los datos que los usuarios ingresan</li><br>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>

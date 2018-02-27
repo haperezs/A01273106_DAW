@@ -1,0 +1,24 @@
+  <div class="main-panel">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <a class="btn btn-primary" href="subir_imagen.php">Subir imagen</a>
+            <a class="btn btn-danger" href="logout.php">Salir</a>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-header" data-background-color="green">
+                <i class="material-icons">store</i>
+            </div>
+
+            <div class="card-content">
+                <h3 class="title">Bienvenido <?=$user?></h3><br><br>
+                <?php if (isset($_SESSION["ruta_archivo"]) != ""): ?>
+                    <img src="<?=$_SESSION["ruta_archivo"]?>">
+                    <h2 class="title"><?=$_SESSION["nombre"]?></h2>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
