@@ -1,0 +1,35 @@
+• ¿Qué hace el primer bloque del código (bloque del IF)?
+Si ya existe un procedimiento con el nombre que vamos a usar, lo elimina
+
+• ¿Para qué sirve la instrucción GO? 
+Indica que se envíen las instrucciones actuales al servidor
+
+• ¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica?
+Recibe Clave, Descripcion, Costo e Impuesto y los guarda en la tabla Materiales
+
+• Explica en tu reporte qué recibe como parámetro este Procedimiento y qué hace
+Recibe como parámetros una parte de la descripción de un material y un costo,
+con estos realiza una consulta en la que el material tenga esa parte en su descripción y el costo sea mayor al ingresado
+
+
+Ejecutar Stored Procedures desde la aplicación cliente 
+(Lab 16)
+
+DELIMITER //
+CREATE PROCEDURE nuevoProveedor (IN urfc char(12), IN unombre varchar(50), IN uempresa varchar(50), IN utelefono varchar(10), IN udireccion varchar(100), IN uciudad varchar(50), IN uemail varchar(50))
+BEGIN
+	INSERT INTO proveedor (rfc, nombre, empresa, telefono, direccion, ciudad, email) VALUES (urfc, unombre, uempresa, utelefono, udireccion, uciudad, uemail);
+END//
+
+• ¿Qué ventajas tienen el utilizar Store Procedures en una aplicación cliente-servidor? 
+El código php es más simple ya que no debe incluir toda la intrucción en SQL, solo llamar al SP
+
+• ¿Qué ventajas tiene utilizar SP en un proyecto?
+Si se requieren mantener gran cantidad de datos se puede volver caótico crear las funciones, utilizando SP se simplifica esto dando la posibilidad de hacerlo mediante una sola
+
+Proyecto
+DELIMITER //
+CREATE PROCEDURE nuevaBodega (IN id_bodega varchar(12), IN unombre tinytext, IN udireccion text, IN upais tinytext, IN uestado tinytext, IN uciudad tinytext, IN uzip int(5), IN uid_encargado varchar(12), IN utelefono varchar(12))
+BEGIN
+	INSERT INTO bodega (id_bodega, nombre, direccion, pais, estado, ciudad, zip, id_encargado, telefono) VALUES (uid_bodega, unombre, udireccion, upais, uestado, uciudad, uzip, uid_encargado, utelefono);
+END//

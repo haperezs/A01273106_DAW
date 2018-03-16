@@ -44,21 +44,10 @@
     function insertProveedores($rfc, $nombre, $empresa, $telefono, $direccion, $ciudad, $email){
         $con = connectDB();
 
-        $query = "INSERT INTO proveedor (rfc, nombre, empresa, telefono, direccion, ciudad, email) VALUES (?,?,?,?,?,?,?)";
+        $query = "CALL nuevoProveedor ('".$rfc."', '".$nombre."', '".$empresa."', '".$telefono."', '".$direccion."', '".$ciudad."', '".$email."');";
 
-        if(!($statement = $con->prepare($query))) {
-            die("Preparation failed: (" . $con->errno . ") " . $con->error);
-        }
+        mysqli_query($con, $query);
 
-        if(!$statement->bind_param("sssssss", $rfc, $nombre, $empresa, $telefono, $direccion, $ciudad, $email)){
-            die("Parameter vinculation failed: (" . $statement->errno . ") " . $statement->error);
-        }
-
-        if(!$statement->execute()) {
-            die("Execution failed: (" . $statement->errno . ") " . $statement->error);
-        }
-
-        mysqli_free_result($results);
         closeDB($con);
     }
 
