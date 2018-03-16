@@ -30,6 +30,17 @@
         return $result;
     }
 
+    function getProveedorId($rfc){
+        $con = connectDB();
+        $sql = 'SELECT * FROM proveedor WHERE rfc = "' . $rfc . '"';
+
+        $result = mysqli_query($con, $sql);
+
+        closeDB($con);
+
+        return $result;
+    }
+
     function insertProveedores($rfc, $nombre, $empresa, $telefono, $direccion, $ciudad, $email){
         $con = connectDB();
 
@@ -66,7 +77,7 @@
     function update($rfc, $nombre, $empresa, $telefono, $direccion, $ciudad, $email){
         $con = connectDB();
 
-        $sql = "UPDATE FROM proveedor SET nombre='".$nombre."', empresa='".$empresa.", telefono='".$telefono."', direccion='".$direccion."', ciudad='".$ciudad."', email='".$email."' WHERE rfc = '" . $rfc . "'";
+        $sql = 'UPDATE proveedor SET nombre="'.$nombre.'", empresa="'.$empresa.'", telefono="'.$telefono.'", direccion="'.$direccion.'", ciudad="'.$ciudad.'", email="'.$email.'" WHERE rfc = "' . $rfc . '"';
 
         $result = mysqli_query($con, $sql);
 
