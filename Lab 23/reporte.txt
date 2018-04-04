@@ -1,0 +1,21 @@
+• ¿Que pasa cuando deseas realizar esta consulta? 
+Se ven reflejados los cambios
+
+• ¿Qué pasa cuando deseas realizar esta consulta? 
+Nunca termina de ejecutarla
+
+• Explica por qué ocurre dicho evento
+Ese registro no esta siendo modificado por la transaction de la otra sesión así que se puede consultar
+
+• ¿Qué ocurrió y por qué? 
+Ya se puede consultar y aparecen los primeros 3 registros insertados, los otros 3 fueron descartados por la otra sesión
+
+• ¿Para qué sirve el comando @@ERROR revisa la ayuda en línea? 
+Regresa el número de errores ocurridos al ejecutar  
+
+• ¿Explica qué hace la transacción?
+Crea 3 registros en clientes_banca, los primeros 2 no tiene problema por sus llaves 005 y 006
+el tercero duplica la llave 001 por lo tanto marca un error y se hace rollback de la transacción
+
+• ¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué.
+No hubo modificaciones, se anularon los cambios al haber un error
