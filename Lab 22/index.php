@@ -34,7 +34,7 @@
                   </td>';
             echo '</tr>';
         }
-        echo '</tbody></table></div>';
+        echo '</tbody></table></div></div>';
     }
 
     include("_proveedores.html");
